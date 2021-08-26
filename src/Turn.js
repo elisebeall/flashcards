@@ -13,22 +13,18 @@ class Turn {
   }
 
   evaluateGuess() {
-    this.card.answers.forEach(this.guess) {
-      if (this.guess === this.card.answers) {
-        return true;
-      } else {
-        return false;
-      }
+    if (this.guess === this.card.correctAnswer) {
+      return true;
+    } else {
+      return false;
     }
   }
 
   giveFeedback() {
-    this.card.answers.forEach(this.guess) {
-      if (this.guess === this.card.answers) {
-        return 'correct!';
-      } else {
-        return 'incorrect!';
-      }
+    if (this.guess === this.card.correctAnswer) {
+      return 'correct!';
+    } else {
+      return 'incorrect!';
     }
   }
 }
