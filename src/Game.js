@@ -7,12 +7,13 @@ const Round = require('./Round');
 
 class Game {
   constructor() {
-    this.currentRound = "";
+    this.currentRound = '';
   }
 
   start() {
     let cards = [];
-    prototypeQuestions.forEach(card, function() {
+    prototypeQuestions.forEach(flashcard => {
+      let card = new Card(flashcard);
       cards.push(card);
     });
     let deck = new Deck(cards);

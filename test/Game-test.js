@@ -17,11 +17,11 @@ describe('Game', function() {
   });
   it ('should keep track of the current round', function() {
     const game = new Game();
-    assert.deepEqual(game.round, );
+    assert.deepEqual(game.currentRound, '');
   });
   it ('should be able to start playing', function() {
     const game = new Game();
     game.start();
-    assert.deepEqual()
+    assert.deepEqual(game.deck.countCards(), 30);
   });
 });
