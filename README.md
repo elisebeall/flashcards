@@ -4,7 +4,7 @@ This command-line program is a flash card simulation.
 
 ![flash cards example gif](https://media.giphy.com/media/1zkb1q58eTiTH6D7wc/giphy.gif)
 
-##Technologies Used
+## Technologies Used
 
 Vanilla JavaScript, Node, ESLint, Mocha, Chai
 
