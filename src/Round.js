@@ -10,7 +10,7 @@ class Round {
   }
 
   returnCurrentCard() {
-    return this.deck.cards[0];
+    return this.currentCard;
   }
 
   takeTurn(guess) {
@@ -27,6 +27,10 @@ class Round {
 
   calculatePercentCorrect() {
     return Math.floor((this.correctGuesses/this.turns)*100);
+  }
+
+  endRound() {
+    return `** Round over! ** You answered ${this.round.calculatePercentCorrect}% of the questions correctly!`;
   }
 }
 
