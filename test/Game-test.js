@@ -4,6 +4,7 @@ const Card = require('../src/Card');
 const Turn = require('../src/Turn');
 const Deck = require('../src/Deck');
 const Round = require('../src/Round');
+const Game = require('../src/Game');
 
 describe('Game', function() {
   it ('should be a function', function() {
@@ -16,11 +17,11 @@ describe('Game', function() {
   });
   it ('should keep track of the current round', function() {
     const game = new Game();
-    assert.deepEqual(game.round, "");
+    assert.deepEqual(game.round, );
   });
   it ('should be able to start playing', function() {
     const game = new Game();
     game.start();
-
+    assert.deepEqual()
   });
 });
