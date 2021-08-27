@@ -4,10 +4,6 @@ const Card = require('../src/Card');
 const Deck = require('../src/Deck');
 
 describe ('Deck', function() {
-  it ('should be a function', function() {
-    const deck = new Deck();
-    assert.typeOf(deck, 'function');
-  });
   it ('should be an instance of Deck', function() {
     const deck = new Deck();
     assert.instanceOf(deck, Deck);
